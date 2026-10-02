@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8fafc;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #b91c1c, #dc2626);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.foto-profil img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    margin-bottom: 15px;
+}
+
+.nama {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.judul {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+.kontak-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    font-size: 0.95rem;
+}
+
+.kontak-bar a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+.kontak-bar a:hover {
+    border-bottom-color: white;
+}
+
+/* Bagian Umum */
+section {
+    padding: 40px 20px;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    color: #b91c1c;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #fecaca;
+}
+
+.about p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* Pendidikan */
+.edu-list {
+    list-style: none;
+}
+
+.edu-list li {
+    background: white;
+    padding: 15px 20px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border-left: 4px solid #b91c1c;
+}
+
+/* Pengalaman Kerja */
+.exp-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.exp-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #1f2937;
+}
+
+.jabatan {
+    color: #6b7280;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.exp-card ul {
+    margin-left: 20px;
+}
+
+.exp-card li {
+    margin-bottom: 6px;
+}
+
+/* Keterampilan */
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.skill-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    border-left: 4px solid #b91c1c;
+}
+
+.skill-card h3 {
+    margin-bottom: 8px;
+    color: #1f2937;
+}
+
+/* Proyek */
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.project-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #1f2937;
+}
+
+.project-card p {
+    margin-bottom: 10px;
+    color: #6b7280;
+}
+
+.project-card ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.project-card li {
+    margin-bottom: 5px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #b91c1c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #991b1b;
+}
+
+/* Kontak */
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+.contact-info a {
+    color: #b91c1c;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.closing {
+    margin-top: 20px;
+    font-weight: 600;
+    color: #16a34a;
+    font-size: 1.05rem;
+}
+
+/* Footer */
+footer {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* Responsif */
+@media(max-width: 600px) {
+    .nama { font-size: 1.5rem; }
+    .kontak-bar { flex-direction: column; gap: 8px; }
+    .foto-profil img { width: 120px; height: 120px; }
+}
